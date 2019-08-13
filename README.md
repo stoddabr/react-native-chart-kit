@@ -4,7 +4,8 @@ Changes after fork:
 
 - Customize ProgressBar component: Centered horizontally, Removed legend
 
-Add to project
+Add to project: 
+
 yarn add https://github.com/stoddabr/react-native-chart-kit.git
 
 
