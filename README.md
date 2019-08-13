@@ -1,11 +1,11 @@
-* FORKED 8/12/19
+# FORKED 8/12/19
 
 Reason for forking:
 
 - To customize the ProgressBar component: Centered horizontally, Removed legend
 
 
-
+# Original readme continues below
 
 If you're looking to **build a website or a cross-platform mobile app** – we will be happy to help you! Send a note to clients@ui1.io and we will be in touch with you shortly.
 
