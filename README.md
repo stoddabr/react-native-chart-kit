@@ -4,6 +4,9 @@ Reason for forking:
 
 - To customize the ProgressBar component: Centered horizontally, Removed legend
 
+Add to project
+yarn add https://github.com/stoddabr/react-native-chart-kit.git
+
 
 # Original readme continues below
 
