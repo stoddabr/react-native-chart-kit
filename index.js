@@ -5,6 +5,7 @@ import PieChart from './src/pie-chart'
 import ProgressChart from './src/progress-chart'
 import ContributionGraph from './src/contribution-graph'
 import StackedBarChart from './src/stackedbar-chart'
+import ProgressChartCentered from './src/ProgressChartCentered.js'
 
 export {
   AbstractChart,
@@ -13,5 +14,6 @@ export {
   PieChart,
   ProgressChart,
   ContributionGraph,
-  StackedBarChart
+  StackedBarChart,
+  ProgressChartCentered,
 }
