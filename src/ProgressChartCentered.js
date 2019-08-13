@@ -5,7 +5,7 @@ import AbstractChart from './abstract-chart'
 
 const Pie = require('paths-js/pie')
 
-class ProgressChart extends AbstractChart {
+class ProgressChartCentered extends AbstractChart {
   render() {
     let {width, height, style = {}, data} = this.props
     const {borderRadius = 0} = style
@@ -59,13 +59,6 @@ class ProgressChart extends AbstractChart {
             height: this.props.height,
             ...this.props.chartConfig
           })}
-          <Rect
-            width="100%"
-            height={this.props.height}
-            rx={borderRadius}
-            ry={borderRadius}
-            fill="url(#backgroundGradient)"
-          />
           <G x={this.props.width / 2} y={this.props.height / 2}>
             <G>
               {pieBackgrounds.map(pie => {
@@ -102,4 +95,4 @@ class ProgressChart extends AbstractChart {
   }
 }
 
-export default ProgressChart
+export default ProgressChartCentered
