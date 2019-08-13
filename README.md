@@ -1,9 +1,8 @@
-* FORKED 8/12/19 *
+* FORKED 8/12/19
 
 Reason for forking:
-- To customize the ProgressBar component
--- Centered horizontally
--- Removed legend
+
+- To customize the ProgressBar component: Centered horizontally, Removed legend
 
 
 
