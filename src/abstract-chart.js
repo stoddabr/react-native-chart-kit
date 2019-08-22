@@ -84,17 +84,18 @@ class AbstractChart extends Component {
     } = config
     const decimalPlaces = this.props.chartConfig.decimalPlaces === undefined ? 2 : this.props.chartConfig.decimalPlaces
     const yAxisLabel = this.props.yAxisLabel || ''
+    const labelSuffix = this.props.chartConfig.labelHorizontalSuffix || ''
 
     return [...new Array(count)].map((_, i) => {
       let yLabel
 
-      if (count === 1) {
-        yLabel = `${yAxisLabel}${data[0].toFixed(decimalPlaces)}`
+      if (count === 1) { 
+        yLabel = `${data[0].toFixed(decimalPlaces)}${yAxisLabel}`
       } else {
         const label = this.props.fromZero ?
           (this.calcScaler(data) / (count - 1)) * i + Math.min(...data, 0) :
           (this.calcScaler(data) / (count - 1)) * i + Math.min(...data)
-        yLabel = `${yAxisLabel}${label.toFixed(decimalPlaces)}`
+        yLabel = `${label.toFixed(decimalPlaces)}${yAxisLabel}`
       }
 
       return (
@@ -113,7 +114,7 @@ class AbstractChart extends Component {
   }
 
   renderVerticalLabels = config => {
-    const {
+    const { 
       labels = [],
       width,
       height,
